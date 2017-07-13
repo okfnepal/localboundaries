@@ -8,3 +8,12 @@ The local boundaries are available in two formats (TopoJSON and GeoJSON) and can
 * Districts Level (75 Districts)
 * Local Levels (767 Local Levels)
 
+### Local Levels coverage
+* Rural Municipality (Gaupalika) 	
+* Municipality (Nagarpalika)
+* Metropolitan (Mahanagarpalika)
+* Sub-Metropolitan (Upamahanagarpalika)
+* National Parks
+* Wildlife Reserves 
+* Hunting Reserves 
+
