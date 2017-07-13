@@ -17,3 +17,6 @@ The local boundaries are available in two formats (TopoJSON and GeoJSON) and can
 * Wildlife Reserves 
 * Hunting Reserves 
 
+The datasets are created by Open Knowledge Nepal by merging the old shapefiles and integrating it according to the new federal structure. Please contact us if you are interested to learn more about how it was created. This is not from governmental source so please verify it before official use. 
+
+
