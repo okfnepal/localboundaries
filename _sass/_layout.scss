@@ -69,6 +69,44 @@
     }
 
 
+.download-container{
+ul {
+    font-weight: 700;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    li {
+        font-weight: 700;
+        display: inline-block;
+        &:hover {
+            background: #fff;
+            ul {
+                display: block;
+            }
+        }
+        ul {
+            position: absolute;
+            width: 200px;
+            display: none;
+            li {
+                background: #fff;
+                padding: 10px;
+
+                display: block;
+                a {
+                    display: block !important;
+                }
+                &:hover {
+                    color: #fff;
+                    background: $brand-color;
+                }
+            }
+        }
+    }
+}
+
+}
+
 /* Site Map
  * ============================================== */
     #map {
@@ -79,6 +117,8 @@
     }
 
 
+
+
 /* Page container
 * ============================================== */
 .page-content {
@@ -87,6 +127,28 @@
     width:100%;
 }
 
+
+/* Download  container
+* ============================================== */
+.download-container{
+    padding: 20px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: #4CC713;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    margin-bottom: 5px;
+}
 /* Site Footer
  * ============================================== */
     .footer {

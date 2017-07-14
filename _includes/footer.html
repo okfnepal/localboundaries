@@ -1,4 +1,4 @@
-    <script>
+<script>
     var map = L.map('map').setView([28.1999999, 84.100140], 7);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 8, minZoom: 6,
@@ -8,53 +8,50 @@
         id: 'mapbox.light'
     }).addTo(map);
 
-
-
-    locallevel = L.geoJson(null, { style: function (feature) {
-        return feature.properties && feature.properties.style;
-    },
+    locallevel = L.geoJson(null, {
+        style: function (feature) {
+            return feature.properties && feature.properties.style;
+        },
 
         onEachFeature: handleLayer,
 
     }).addTo(map)
 
 
-
-
-
-    district = L.geoJson(null, { style: function (feature) {
-        return {
-            weight: 2,
-            color: 'black',
-            fillColor:'none'
-        }
-    },
+    district = L.geoJson(null, {
+        style: function (feature) {
+            return {
+                weight: 2,
+                color: 'black',
+                fillColor: 'none'
+            }
+        },
     })
 
-    province = L.geoJson(null, { style: function (feature) {
-        return {
-            weight: 2,
-            color: 'red',
-            fillColor:'none'
-        }
-    },
+    province = L.geoJson(null, {
+        style: function (feature) {
+            return {
+                weight: 2,
+                color: 'red',
+                fillColor: 'none'
+            }
+        },
 
     })
 
 
-
-    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/municipality.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/municipality.topojson', function (error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         locallevel.addData(neighborhoods);
     })
 
 
-    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/District.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/District.topojson', function (error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         district.addData(neighborhoods);
     })
 
-    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/province.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/province.topojson', function (error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         province.addData(neighborhoods);
     })
@@ -68,22 +65,22 @@
         "Province": province,
     };
 
-    L.control.layers(districtLayer,provinceLayer).addTo(map);
+    L.control.layers(districtLayer, provinceLayer).addTo(map);
 
 
-    function handleLayer(feature,layer){
+    function handleLayer(feature, layer) {
         layer.bindLabel(
-            'ID :'+feature.properties.F_ID +'<br>'+
-            'Municipality Name : '+feature.properties.NAME +'<br>'+
-            'Municipality Level : ' + feature.properties.LEVEL +'<br>'+
-            'District : ' + feature.properties.DISTRICT +'<br>',{noHide: true})
+            'ID :' + feature.properties.F_ID + '<br>' +
+            'Municipality Name : ' + feature.properties.NAME + '<br>' +
+            'Municipality Level : ' + feature.properties.LEVEL + '<br>' +
+            'District : ' + feature.properties.DISTRICT + '<br>', {noHide: true})
 
         layer.setStyle({
-            fillColor : '#D5E3FF',
+            fillColor: '#D5E3FF',
             fillOpacity: 1,
-            color:'#555',
-            weight:1,
-            opacity:0.5
+            color: '#555',
+            weight: 1,
+            opacity: 0.5
         });
 
         layer.on({
@@ -95,33 +92,24 @@
         });
     }
 
-
-
-
-
-    function enterLayer(){
+    function enterLayer() {
         this.bringToFront();
         this.setStyle({
-            weight:2,
+            weight: 2,
             opacity: 1
         });
     }
 
-
-
-    function leaveLayer(){
+    function leaveLayer() {
         this.bringToBack();
         this.setStyle({
-            weight:1,
-            opacity:.5
+            weight: 1,
+            opacity: .5
         });
     }
 
-
-
-
 </script>
 <div class="footer" align="center">
-  Designed by <a href=http://diezcami.github.io target="_blank">Camille Diez</a><BR />
-  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+    Designed by <a href=http://diezcami.github.io target="_blank">Camille Diez</a><BR/>
+    Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
 </div>
