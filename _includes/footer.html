@@ -49,7 +49,7 @@
     })
 
 
-    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/district.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/District.topojson', function(error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         district.addData(neighborhoods);
     })
