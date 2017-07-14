@@ -49,12 +49,12 @@
     })
 
 
-    d3.json('../css/district.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/district.topojson', function(error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         district.addData(neighborhoods);
     })
 
-    d3.json('../css/province.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/province.topojson', function(error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         province.addData(neighborhoods);
     })
