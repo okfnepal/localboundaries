@@ -43,7 +43,7 @@
 
 
 
-    d3.json('../css/municipality.topojson', function(error, data) {
+    d3.json('https://raw.githubusercontent.com/okfnepal/localboundaries/gh-pages/css/municipality.topojson', function(error, data) {
         var neighborhoods = topojson.feature(data, data.objects.collection)
         locallevel.addData(neighborhoods);
     })
