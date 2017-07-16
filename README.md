@@ -19,6 +19,12 @@ Published link: https://okfnepal.github.io/localboundaries/
 * Wildlife Reserves 
 * Hunting Reserves 
 
+## License
+All these datasets are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). So, You are free to: Share - copy and redistribute the material in any medium or format and Adapt - remix, transform, and build upon the material for any purpose, even commercially.
+
+But only Under the following terms: Attribution - You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+## Note
 The datasets are created by Open Knowledge Nepal by merging the old shapefiles and integrating it according to the new federal structure. Please contact us if you are interested to learn more about how it was created. This is not from governmental source so please verify it before official use. 
 
 
