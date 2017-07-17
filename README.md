@@ -1,7 +1,7 @@
 # About Local Boundaries
-Local Boundaries brings the detail geodata of administrative units or maps of all administrative boundary defined by Nepal Government, in open and reusable format for free of costs.
+Local Boundaries brings the detail geodata of new administrative units or maps of all administrative boundary defined by Nepal Government, in open and reusable format for free of costs.
 
-The local boundaries are available in two formats (TopoJSON and GeoJSON) and can be easily reused to map local authority data to an OpenStreetMap, Google Map or Map Box.
+The local boundaries are available in two formats (TopoJSON and GeoJSON) and can be easily reused to map local authority data to an OpenStreetMap, Google Map, Leaflet or MapBox.
 
 Published link: https://okfnepal.github.io/localboundaries/
 
@@ -10,7 +10,7 @@ Published link: https://okfnepal.github.io/localboundaries/
 * Districts Level (75 Districts)
 * Local Levels (767 Local Levels)
 
-### Local Levels coverage
+### Local Levels Includes:
 * Rural Municipality (Gaupalika) 	
 * Municipality (Nagarpalika)
 * Metropolitan (Mahanagarpalika)
