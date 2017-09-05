@@ -3,7 +3,7 @@ Local Boundaries brings the detail geodata of new administrative units or maps o
 
 The local boundaries are available in two formats (TopoJSON and GeoJSON) and can be easily reused to map local authority data to an OpenStreetMap, Google Map, Leaflet or MapBox.
 
-Published link: https://okfnepal.github.io/localboundaries/
+Published link: http://localboundries.oknp.org
 
 ## Levels and types of local boundaries included
 * Provinces Level (7 Provinces)
