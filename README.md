@@ -7,8 +7,8 @@ Published link: http://localboundries.oknp.org
 
 ## Levels and types of local boundaries included
 * Provinces Level (7 Provinces)
-* Districts Level (75 Districts)
-* Local Levels (767 Local Levels)
+* Districts Level (77 Districts)
+* Local Levels (753 Local Levels)
 
 ### Local Levels Includes:
 * Rural Municipality (Gaupalika) 	
